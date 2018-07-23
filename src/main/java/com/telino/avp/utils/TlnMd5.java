@@ -219,36 +219,4 @@ public class TlnMd5
    	String sMd5 = vTask.computeDigest(sMd5Src.getBytes());
    	return sMd5;
    }
-
-   public static void main (String args[])
-   {
-       TlnMd5 vTask = new TlnMd5 (TlnMd5.MD5);
-   	String sMd5Src = "70upload2HRQ2VWH2004-06-3010:30:00";
-//   	String sMd5Dst ="AB B1 F3 4C 65 A2 CB 1B 25 11 46 DD CF 22 B5 83";
-   	String sMd5Tst;
-   	sMd5Tst = vTask.computeDigest(sMd5Src.getBytes());
-   	
-   	sMd5Src = "";
-   	sMd5Tst = vTask.computeDigest(sMd5Src.getBytes());
-   	
-   	
-   	System.out.println(sMd5Tst);
-
-   	
-   	
-
-       String inputFileName = "C:/TEMP/Devis.pdf";
-       String outputFileName = "C:/TEMP/Devis.md5";
-
-       try
-       {
-       	vTask.getInprint(inputFileName, outputFileName);
-       }
-       catch(Exception e)
-       {
-       	System.out.println(e.toString());
-       }
-   	
-   }
-
 }
