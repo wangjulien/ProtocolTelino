@@ -112,25 +112,25 @@ public final class DbEntityProtocol {
 	 */
 	public static enum ExpTaskType {
 		
-		NEED_HUMAN_INTERVENTION(1L),
+		NEED_HUMAN_INTERVENTION(1),
 		
-		RELAUNCH_FILE_ENTIRETY_CHECK(2L),
+		RELAUNCH_FILE_ENTIRETY_CHECK(2),
 
-		CHECK_RESTORE_MASTER_HASH(3L),
-		CHECK_RESTORE_MIRROR_HASH(4L),
-		RESTORE_MASTER_FILE(5L),
-		RESTORE_MIRROR_FILE(6L),
-		CHECK_RESTORE_MASTER_METADATA(7L),
-		CHECK_RESTORE_MIRROR_METADATA(8L);
+		CHECK_RESTORE_MASTER_HASH(3),
+		CHECK_RESTORE_MIRROR_HASH(4),
+		RESTORE_MASTER_FILE(5),
+		RESTORE_MIRROR_FILE(6),
+		CHECK_RESTORE_MASTER_METADATA(7),
+		CHECK_RESTORE_MIRROR_METADATA(8);
 		
-		private Long typeId;
+		private Integer typeId;
 		
 		
-		private ExpTaskType(Long typeId) {
+		private ExpTaskType(Integer typeId) {
 			this.typeId = typeId;
 		}
 		
-		public static ExpTaskType getType(Long id) {
+		public static ExpTaskType getType(Integer id) {
 		      
 	        if (id == null) {
 	            return null;
@@ -144,7 +144,7 @@ public final class DbEntityProtocol {
 	        throw new IllegalArgumentException("No matching type for id " + id);
 	    }
 		
-		public Long getTypeId() {
+		public Integer getTypeId() {
 			return typeId;
 		}
 	}

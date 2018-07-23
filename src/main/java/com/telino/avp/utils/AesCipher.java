@@ -51,6 +51,10 @@ public final class AesCipher {
 
 		return result;
 	}
+	
+	public static byte[] encrypt(final byte[] secretKey, final byte[] ivBytes, final byte[] bytesToEncrypt) throws AesCipherException {
+		return transform(Cipher.ENCRYPT_MODE, secretKey, ivBytes, bytesToEncrypt);
+	}
 
 	/**
 	 * @param secretKey	: ByteArray d'un clé symétrique (même clé lors de cryptage) pour décrypter avec AES
