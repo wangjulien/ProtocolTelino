@@ -60,6 +60,7 @@ public final class AvpProtocol {
 		GET_RIGHTS("getrights", "get rights"),
 		GET_USER_PROFILES("getuserprofiles", "get user profiles"),
 		IMPORT_FILES("importfiles", "Import automatique des documents à archiver"),
+		INIT_STORAGE_UNIT("initstorageunit", ""),
 		LIST("list", "list"),
 		LOG_EVENT("logevent", "log event"),
 		LOG_ARCHIVE("logarchive", "log archive"),
