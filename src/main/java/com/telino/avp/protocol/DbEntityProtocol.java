@@ -187,7 +187,8 @@ public final class DbEntityProtocol {
 	public static enum DocumentStatut {
 		REARDY_FOR_ARCHIVE(0), 
 		ARCHIVED(1), 
-		ATTESTATION(2);
+		ATTESTATION(2),
+		LOG_DOC(3);
 
 		private int statutCode;
 

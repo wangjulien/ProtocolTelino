@@ -170,6 +170,10 @@ public final class AvpProtocol {
 	}
 	
 	
+	public static enum AvpExceptionDetail {
+		ARCHIVE_NOT_FOUND;
+	}
+	
 	
 	/**
 	 * SedaArchiveAdapter REST API resource localation
