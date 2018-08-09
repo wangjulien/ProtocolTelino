@@ -90,7 +90,7 @@ public final class DbEntityProtocol {
 	public static enum LogEventType {
 		C("Contrôle d'intégrité de l'archive "), 
 		S("Scellement "), 
-		E("Apllication ");
+		E("Apllication exception");
 
 		private String detail;
 
